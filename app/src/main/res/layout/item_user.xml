@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <data>
+        <variable name="item" type="com.example.irshayakhmetov.binding.Item"/>
+        <import type="android.view.View" />
+    </data>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/buttonItemText"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:text="@{ item.user.fullName}"
+                android:textColor="@color/navy"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_weight="0.36" />
+
+            <TextView
+                android:id="@+id/textItemTest"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:text="@{item.user.work}"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:textAlignment="gravity"
+                android:textSize="20sp"
+                />
+     </LinearLayout>
+
+</layout>

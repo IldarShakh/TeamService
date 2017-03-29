@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.example.irshayakhmetov.binding.R" />
+        <import type="me.tatarka.bindingcollectionadapter2.LayoutManagers" />
+        <variable name="viewModel" type="com.example.irshayakhmetov.binding.ViewModel"/>
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layoutManager="@{LayoutManagers.linear()}"
+                    app:items="@{viewModel.items}"
+                    app:itemBinding="@{viewModel.itemBinding}"/> />
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+</layout>
