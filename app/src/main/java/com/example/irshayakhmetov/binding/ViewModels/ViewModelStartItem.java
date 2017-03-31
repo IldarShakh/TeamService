@@ -1,7 +1,10 @@
-package com.example.irshayakhmetov.binding;
+package com.example.irshayakhmetov.binding.ViewModels;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+
+import com.example.irshayakhmetov.binding.Models.User;
+import com.example.irshayakhmetov.binding.User;
 
 /**
  * Created by irshayakhmetov on 14.03.2017.

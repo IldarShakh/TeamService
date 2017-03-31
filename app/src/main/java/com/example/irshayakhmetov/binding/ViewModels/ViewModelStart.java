@@ -1,4 +1,4 @@
-package com.example.irshayakhmetov.binding;
+package com.example.irshayakhmetov.binding.ViewModels;
 
 import android.databinding.ObservableArrayList;
 import android.databinding.ObservableList;
